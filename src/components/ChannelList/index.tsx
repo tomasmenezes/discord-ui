@@ -11,7 +11,7 @@ const ChannelList = () => {
                 <AddCategoryIcon />
             </Category>
 
-            <ChannelButton channelName="free-chat" />
+            <ChannelButton channelName="free-chat" selected />
             <ChannelButton channelName="work" />
             <ChannelButton channelName="random" />
             <ChannelButton channelName="csgo" />

@@ -28,7 +28,7 @@ export const Container = styled.div`
         color: var(--senary);
     }
 
-    :hover, .active {
+    &:hover, &.active {
         background-color: var(--quinary);
 
         > div span {

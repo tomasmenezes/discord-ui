@@ -5,7 +5,7 @@ const ChannelInfo = () => {
     return (
         <Container>
             <HashtagIcon />
-            <Title>Free chat</Title>
+            <Title>free-chat</Title>
             <Separator />
             <Description>Channel open for chat</Description>
         </Container>
