@@ -19,6 +19,7 @@ const ServerButton = ({
         isHome={isHome}
         hasNotifications={hasNotifications}
         mentions={mentions}
+        selected={selected}
         className={selected ? 'active' : ''}
     >
         {isHome && <img src={Logo} alt='Rocketseat' />}

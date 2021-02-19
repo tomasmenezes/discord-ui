@@ -6,7 +6,7 @@ import { Container, Category, AddCategoryIcon } from './styles'
 const ChannelList = () => {
     return (
         <Container>
-            <Category> 
+            <Category>
                 <span>Text channels</span>
                 <AddCategoryIcon />
             </Category>

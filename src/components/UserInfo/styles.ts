@@ -67,6 +67,10 @@ export const UserData = styled.div`
         font-size: 13px;
         color: var(--white);
         display: block;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     > span {
@@ -81,7 +85,7 @@ export const Icons = styled.div`
     /* justify-content: space-between; */
 
     > svg:not(:first-child) {
-        margin-left: 7px;
+        margin-left: 9px;
     }
 `;
 

@@ -11,8 +11,11 @@ export const Container = styled.div`
 
     cursor: pointer;
 
-    padding: 5px 3px;
+    height: 32px;
+    width: 100%;
+    padding: 5px 5px;
     border-radius: 5px;
+    margin-bottom: 2px;
 
     background-color: transparent;
 

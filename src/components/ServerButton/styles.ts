@@ -23,17 +23,20 @@ export const Button = styled.button<Props>`
 
     &::before {
         width: 9px;
-        height: 9px;
+        /* height: 9px; */
+        height: ${props => props.selected ? '38px' : '9px'};
         
         position: absolute;
         left: -17px;
-        top: calc(50% - 4.5px);
+        /* top: calc(50% - 4.5px); */
+        top: ${props => props.selected ? 'calc(50% - 19px)' : 'calc(50% - 4.5px)'};
 
         background-color: var(--white);
-        border-radius: 50%;
+        /* border-radius: 50%; */
+        border-radius: ${props => props.selected ? '12px' : '50%'};
 
         content: '';
-        display: ${props => props.hasNotifications ? 'inline' : 'none'}
+        display: ${props => (props.hasNotifications || props.selected) ? 'inline' : 'none'}
     }
 
     &::after {
@@ -60,7 +63,7 @@ export const Button = styled.button<Props>`
 
     }
 
-    transition: boder-radius .5s, background-color .2s;
+    transition: border-radius .2s, background-color .2s;
 
     &.active, &:hover {
         border-radius: 16px;
