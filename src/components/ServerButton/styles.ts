@@ -60,7 +60,7 @@ export const Button = styled.button<Props>`
 
     }
 
-    transition: boder-radius .2s, background-color .2s;
+    transition: boder-radius .5s, background-color .2s;
 
     &.active, &:hover {
         border-radius: 16px;
