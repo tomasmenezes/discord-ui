@@ -7,7 +7,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     
-    padding: 3px 6px 0 16px;
+    padding: 3px 6px 0 10px; // left: 16px
     background-color: var(--secondary);
 
     max-height: calc(100vh - 46px); // Viewport height - top nav height
@@ -29,6 +29,7 @@ export const Container = styled.div`
 
 export const Role = styled.span`
     margin-top: 20px;
+    padding-left: 5px;
 
     text-transform: uppercase;
     font-size: 12px;

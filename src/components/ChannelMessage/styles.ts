@@ -9,6 +9,11 @@ export const Container = styled.div`
 
     background-color: transparent;
 
+    &:hover {
+        background-color: #33353A;
+        border-radius: 0 2px 2px 0;
+    }
+
     &.mention {
         background-color: var(--mention-message);
 
@@ -51,7 +56,8 @@ export const Header = styled.div`
 
     > strong {
         color: var(--white);
-        font-size: 16px;
+        font-size: 1rem; // 16px
+        font-weight: 500;
     }
 
     > span {
@@ -78,9 +84,9 @@ export const Header = styled.div`
 
 export const Content = styled.div`
     text-align: left;
-    font-size: 16px;
+    font-size: 1rem; // 16px
 
-    color: var(--white);
+    color: #DCDDDE;// var(--white)
 `;
 
 export const Mention = styled.span`

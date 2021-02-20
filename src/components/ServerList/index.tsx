@@ -14,7 +14,7 @@ const ServerList = () => {
             <ServerButton />
             <ServerButton />
             <ServerButton selected />
-            <ServerButton />
+            <ServerButton mentions={72} />
             <ServerButton />
         </Container>
     )

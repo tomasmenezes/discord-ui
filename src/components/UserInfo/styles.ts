@@ -64,7 +64,8 @@ export const UserData = styled.div`
     flex-direction: column;
 
     > strong {
-        font-size: 13px;
+        font-size: 14px; // 13px
+        font-weight: 600;
         color: var(--white);
         display: block;
 

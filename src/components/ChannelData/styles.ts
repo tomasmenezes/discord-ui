@@ -15,32 +15,46 @@ export const Messages = styled.div`
     display: flex;
     flex-direction: column;
 
-    padding: 20px 0;
+    padding: 10px 0;
 
-    max-height: calc(100vh - 46px - 68px); // Viewport - topnav - message input
+    max-height: calc(100vh - 46px - 68px); // Viewport - topnav - message input - separator
     overflow-y: scroll;
 
-    // transition: opacity .2s;
-
-    /* &:hover {
-        ::-webkit-scrollbar-thumb {
-            opacity: 1;
-        }
-    } */
-
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 8px;
     }
 
     ::-webkit-scrollbar-thumb {
         background-color: var(--tertiary);
         border-radius: 4px;
-        // opacity: 0;
+        // border: solid 3px transparent;
     }
 
     ::-webkit-scrollbar-track {
-        background-color: var(--quaternary);
-        // opacity: 0;
+        background-color: var(--secondary);
+        // border: solid 3px transparent;
+    } */
+
+    ::-webkit-scrollbar{
+        width: 16px;
+    }
+
+    ::-webkit-scrollbar-corner{
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--tertiary);
+        border: 4px solid transparent;
+        background-clip: padding-box;
+        border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 4px solid transparent;
+        background-clip: padding-box;
+        border-radius: 8px;
+        background-color: #2e3338;
     }
 `;
 
@@ -54,9 +68,9 @@ export const Input = styled.input`
     height: 44px;
 
     padding: 0 10px 0 56px;
-
     border-radius: 7px;
 
+    font-size: 1rem;
     color: var(--white);
     background-color: var(--chat-input);
 
