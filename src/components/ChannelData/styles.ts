@@ -59,6 +59,7 @@ export const Messages = styled.div`
 `;
 
 export const InputWrapper = styled.div`
+    height: 68px;
     width: 100%;
     padding: 0 16px;
 `;
