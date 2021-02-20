@@ -58,6 +58,7 @@ export const Header = styled.div`
         color: var(--white);
         font-size: 1rem; // 16px
         font-weight: 500;
+        line-height: 1.375rem;
     }
 
     > span {
@@ -85,6 +86,7 @@ export const Header = styled.div`
 export const Content = styled.div`
     text-align: left;
     font-size: 1rem; // 16px
+    line-height: 1.375rem;
 
     color: #DCDDDE;// var(--white)
 `;
