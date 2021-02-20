@@ -46,6 +46,26 @@ export const Container = styled.div`
     > .channelTools svg {
         display: none;
     }
+
+    > .channelTools span {
+        background-color: var(--notification);
+        width: auto;
+        height: 16px;
+
+        padding: 0 4px;
+
+        // position: absolute;
+        // bottom: -4px;
+        // right: -4px;
+
+        border-radius: 12px;
+        //border: 4px solid var(--quaternary);
+
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--white);
+    }
 `;
 
 export const HashtagIcon = styled(Hashtag)`

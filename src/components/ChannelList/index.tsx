@@ -11,11 +11,11 @@ const ChannelList = () => {
                 <AddCategoryIcon />
             </Category>
 
-            <ChannelButton channelName="free-chat" selected />
+            <ChannelButton channelName="free-chat" selected notifications={32} />
             <ChannelButton channelName="work" />
             <ChannelButton channelName="random" />
             <ChannelButton channelName="csgo" />
-            <ChannelButton channelName="valorant" />
+            <ChannelButton channelName="memes" notifications={7} />
         </Container>
     );
 }
