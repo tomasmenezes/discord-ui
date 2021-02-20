@@ -1,4 +1,8 @@
 import React from 'react'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
+import 'tippy.js/animations/scale-subtle.css'
+import '../../styles/tippyStyle.css'
 
 import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon } from './styles'
 
@@ -20,9 +24,41 @@ const UserInfo = ({ status }: StatusProps) => {
             </Profile>
 
             <Icons>
-                <MicIcon />
-                <HeadphoneIcon />
-                <SettingsIcon />
+                <Tippy 
+                    content={'Mute'} 
+                    inertia={true}
+                    placement={'top'}
+                    animation={'scale-subtle'}
+                    offset={[0,15]}
+                    duration={75}
+                    theme={'discord'}
+                >
+                    <MicIcon />
+                </Tippy>
+                
+                <Tippy 
+                    content={'Deafen'} 
+                    inertia={true}
+                    placement={'top'}
+                    animation={'scale-subtle'}
+                    offset={[0,15]}
+                    duration={75}
+                    theme={'discord'}
+                >
+                    <HeadphoneIcon />
+                </Tippy>
+
+                <Tippy 
+                    content={'User Settings'} 
+                    inertia={true}
+                    placement={'top'}
+                    animation={'scale-subtle'}
+                    offset={[0,15]}
+                    duration={75}
+                    theme={'discord'}
+                >
+                    <SettingsIcon />
+                </Tippy>                    
             </Icons>
         </Container>
     );

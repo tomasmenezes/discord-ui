@@ -2,7 +2,7 @@ import React from 'react'
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/scale-subtle.css'
-import '../../styles/tippystyle.css'
+import '../../styles/tippyStyle.css'
 
 import Logo from '../../assets/Logo.svg'
 import { Button } from './styles'
