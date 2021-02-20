@@ -33,7 +33,7 @@ export const Role = styled.span`
 
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--gray);
 `;
 
