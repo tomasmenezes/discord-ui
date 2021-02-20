@@ -6,14 +6,14 @@ import { Container, Separator } from './styles';
 const ServerList = () => {
     return (
         <Container>
-            <ServerButton isHome />
+            <ServerButton isHome serverName={'Home'} />
             <Separator />
             <ServerButton />
-            <ServerButton hasNotifications />
-            <ServerButton mentions={3} />
+            <ServerButton hasNotifications serverName={'Editing'} />
+            <ServerButton mentions={3} serverName={'Gaming'} />
             <ServerButton />
             <ServerButton />
-            <ServerButton selected />
+            <ServerButton selected serverName={'Noob server'} />
             <ServerButton mentions={72} />
             <ServerButton />
         </Container>

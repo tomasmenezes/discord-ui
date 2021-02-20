@@ -110,7 +110,7 @@ export const MentionToken = styled.span`
     color: var(--link);
     cursor: pointer;
 
-    transition: 180ms ease-in-out;
+    transition: 75ms ease-in-out;
 
     &:hover {
         background-color: var(--link);

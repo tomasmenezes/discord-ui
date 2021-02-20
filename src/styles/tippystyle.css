@@ -1,0 +1,20 @@
+.tippy-box[data-theme~="discord"] {
+	background-color: var(--tertiary);
+}
+
+.tippy-box[data-theme~="discord"][data-placement^="top"]
+	> .tippy-arrow::before {
+	border-top-color: var(--tertiary);
+}
+.tippy-box[data-theme~="discord"][data-placement^="bottom"]
+	> .tippy-arrow::before {
+	border-bottom-color: var(--tertiary);
+}
+.tippy-box[data-theme~="discord"][data-placement^="left"]
+	> .tippy-arrow::before {
+	border-left-color: var(--tertiary);
+}
+.tippy-box[data-theme~="discord"][data-placement^="right"]
+	> .tippy-arrow::before {
+	border-right-color: var(--tertiary);
+}
