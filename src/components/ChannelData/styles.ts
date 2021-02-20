@@ -18,7 +18,7 @@ export const Messages = styled.div`
     padding: 10px 0;
 
     max-height: calc(100vh - 46px - 68px); // Viewport - topnav - message input - separator
-    overflow-y: scroll;
+    overflow-y: auto;
 
     /* ::-webkit-scrollbar {
         width: 8px;

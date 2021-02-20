@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { Container, Messages, InputWrapper, Input, InputIcon } from './styles'
-import ChannelMessage, { Mention } from '../ChannelMessage'
+import ChannelMessage, { Mention, MentionToken } from '../ChannelMessage'
 
 const ChannelData = () => {
 
@@ -79,9 +79,14 @@ const ChannelData = () => {
                     content="lol"
                 />
                 <ChannelMessage 
-                    author="Username"
+                    author="Player3"
                     date="21/06/2020"
-                    content="lol"
+                    content={
+                        <>
+                            What's up <MentionToken>@Username</MentionToken>, have you seen the other link yet?
+                        </>
+                    }
+                    hasMention
                 />
                 <ChannelMessage 
                     author="Username"

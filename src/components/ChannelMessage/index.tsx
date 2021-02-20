@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Avatar, Message, Header, Content } from './styles'
-export { Mention } from './styles'
+export { Mention, MentionToken } from './styles'
 
 export interface Props {
     author: string,

@@ -5,13 +5,13 @@ export const Container = styled.div`
     align-items: center;
 
     padding: 4px 16px;
-    margin-right: 4px;
+    // margin-right: 4px;
 
     background-color: transparent;
+    border-radius: 0 2px 2px 0;
 
     &:hover {
         background-color: #33353A;
-        border-radius: 0 2px 2px 0;
     }
 
     &.mention {
@@ -95,5 +95,23 @@ export const Mention = styled.span`
 
     &:hover {
         text-decoration: underline;
+    }
+`;
+
+export const MentionToken = styled.span`
+    background-color: #7289DA1A;
+    border-radius: 3px;
+    
+    padding: 0 2px;
+    
+    font-weight: 500;
+    color: var(--link);
+    cursor: pointer;
+
+    transition: 180ms ease-in-out;
+
+    &:hover {
+        background-color: var(--link);
+        color: var(--white);
     }
 `;
