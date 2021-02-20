@@ -17,8 +17,12 @@ export const Button = styled.button<Props>`
     cursor: pointer;
 
     > img {
-        width: 24px;
-        height: 24px;
+        width: 30px; // 24px;
+        height: 30px; // 24px;
+        
+        /* > svg {
+            color: var(--white);
+        } */
     }
 
     &::before {

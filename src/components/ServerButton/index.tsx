@@ -4,7 +4,8 @@ import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/scale-subtle.css'
 import '../../styles/tippyStyle.css'
 
-import Logo from '../../assets/Logo.svg'
+// import Logo from '../../assets/Logo.svg'
+import reactIcon from '../../assets/react.svg'
 import { Button } from './styles'
 
 export interface Props {
@@ -39,7 +40,7 @@ const ServerButton = ({
                 selected={selected}
                 className={selected ? 'active' : ''}
             >
-                {isHome && <img src={Logo} alt='Rocketseat' />}
+                {isHome && <img src={reactIcon} alt='React' />}
             </Button>
         </Tippy>
     )

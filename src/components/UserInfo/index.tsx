@@ -1,10 +1,19 @@
 import React from 'react'
-import Tippy from '@tippyjs/react'
+import Tippy, { tippy } from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/scale-subtle.css'
 import '../../styles/tippyStyle.css'
 
-import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadphoneIcon, SettingsIcon } from './styles'
+import { Container, Profile, Avatar, UserData, Icons, SmallButton, MicIcon, HeadphoneIcon, SettingsIcon } from './styles'
+
+tippy.setDefaultProps({
+    inertia:true,
+    placement:'top',
+    animation:'scale-subtle',
+    offset:[0,15],
+    duration:75,
+    theme:'discord'
+})
 
 export interface StatusProps {
     status?: string;
@@ -24,40 +33,22 @@ const UserInfo = ({ status }: StatusProps) => {
             </Profile>
 
             <Icons>
-                <Tippy 
-                    content={'Mute'} 
-                    inertia={true}
-                    placement={'top'}
-                    animation={'scale-subtle'}
-                    offset={[0,15]}
-                    duration={75}
-                    theme={'discord'}
-                >
-                    <MicIcon />
+                <Tippy content={'Mute'} >
+                    <SmallButton>
+                        <MicIcon />
+                    </SmallButton>
                 </Tippy>
                 
-                <Tippy 
-                    content={'Deafen'} 
-                    inertia={true}
-                    placement={'top'}
-                    animation={'scale-subtle'}
-                    offset={[0,15]}
-                    duration={75}
-                    theme={'discord'}
-                >
-                    <HeadphoneIcon />
+                <Tippy content={'Deafen'} >
+                    <SmallButton>
+                        <HeadphoneIcon />
+                    </SmallButton>
                 </Tippy>
 
-                <Tippy 
-                    content={'User Settings'} 
-                    inertia={true}
-                    placement={'top'}
-                    animation={'scale-subtle'}
-                    offset={[0,15]}
-                    duration={75}
-                    theme={'discord'}
-                >
-                    <SettingsIcon />
+                <Tippy content={'User Settings'} >
+                    <SmallButton>
+                        <SettingsIcon />
+                    </SmallButton>
                 </Tippy>                    
             </Icons>
         </Container>

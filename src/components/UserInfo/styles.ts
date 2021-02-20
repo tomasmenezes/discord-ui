@@ -85,8 +85,25 @@ export const Icons = styled.div`
     align-items: center;
     /* justify-content: space-between; */
 
-    > svg:not(:first-child) {
-        margin-left: 9px;
+    // > svg
+    > button:not(:first-child) { 
+        margin-left: 3px;
+    }
+`;
+
+export const SmallButton = styled.button`
+    height: 26px;
+    width: 26px;
+
+    padding: 2px 2px;
+
+    background-color: transparent;
+    border-radius: 2px;
+
+    transition: .1s;
+
+    &:hover {
+        background-color: var(--quinary)
     }
 `;
 
