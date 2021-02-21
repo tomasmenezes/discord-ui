@@ -11,6 +11,14 @@ export default createGlobalStyle`
         height: 100%;
     }
 
+    html {
+        background-color: var(--quaternary);
+    }
+
+    body {
+        box-shadow: 0px 0px 5px 5px black;
+    }
+
     :root {
         --primary: #36393f;
         --secondary: #2f3136;

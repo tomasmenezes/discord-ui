@@ -64,7 +64,7 @@ export const UserData = styled.div`
     flex-direction: column;
 
     > strong {
-        font-size: 14px; // 13px
+        font-size: 13px; // 13px
         font-weight: 600;
         color: var(--white);
         display: block;
@@ -76,7 +76,7 @@ export const UserData = styled.div`
 
     > span {
         color: var(--gray);
-        font-size: 13px;
+        font-size: 12px;
     }
 `;
 
